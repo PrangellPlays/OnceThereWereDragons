@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "otwd",
+	"version": "${version}",
+	"name": "Once there were Dragons",
+	"description": "Once Dragons use to rule this earth.",
+	"authors": [
+		"PrangellPlays"
+	],
+	"license": "All Rights Reserved",
+	"icon": "assets/otwd/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.prangellplays.otwd.OTWD"
+		],
+		"client": [
+			"dev.prangellplays.otwd.OTWDClient"
+		],
+		"fabric-datagen": [
+			"dev.prangellplays.otwd.OTWDDataGenerator"
+		]
+	},
+	"mixins": [
+		"otwd.mixins.json"
+	],
+	"accessWidener": "otwd.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

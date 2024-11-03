@@ -1,0 +1,23 @@
+{
+  "__Comment": "Items",
+  "item.otwd.dragon_saddle": "Dragon Saddle",
+
+  "__Comment": "Blocks",
+  "block.otwd.nightfury_egg": "Night Fury Egg",
+
+  "__Comment": "Item Group",
+  "itemgroup.otwd.items": "OTWD Dragon Eggs",
+  "itemgroup.otwd.dragon_egg": "OTWD Dragon Eggs",
+
+  "__Comment": "Death Message",
+
+
+  "__Comment": "Subtitle",
+
+
+  "__Comment": "Keybinding",
+
+
+  "__Comment": "Entity",
+  "entity.otwd.nightfury": "Night Fury"
+}
