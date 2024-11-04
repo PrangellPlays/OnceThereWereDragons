@@ -1,9 +1,14 @@
 {
   "__Comment": "Items",
   "item.otwd.dragon_saddle": "Dragon Saddle",
+  "item.otwd.nightfury_egg_incubated": "Night Fury Egg",
 
   "__Comment": "Blocks",
+  "block.otwd.dragon_egg.incubated": "Incubated",
+  "block.otwd.dragon_egg.incubated.true": "True",
+  "block.otwd.dragon_egg.incubated.false": "False",
   "block.otwd.nightfury_egg": "Night Fury Egg",
+
 
   "__Comment": "Item Group",
   "itemgroup.otwd.items": "OTWD Dragon Eggs",

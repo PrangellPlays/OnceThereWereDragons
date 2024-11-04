@@ -56,7 +56,7 @@ public class OTWDBlocks {
     static {
         //DRAGON EGG
         //HTTYD
-        NIGHTFURY_EGG = registerWithItem("nightfury_egg", new NightfuryEggBlock(AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(0.5F).sounds(BlockSoundGroup.STONE).nonOpaque()));
+        NIGHTFURY_EGG = registerWithItem("nightfury_egg", new NightfuryEggBlock(AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(0.5F).sounds(BlockSoundGroup.METAL).nonOpaque().notSolid()));
 
         //OTWD
     }

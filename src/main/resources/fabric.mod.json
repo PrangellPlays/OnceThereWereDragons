@@ -3,10 +3,14 @@
 	"id": "otwd",
 	"version": "${version}",
 	"name": "Once there were Dragons",
-	"description": "Once Dragons use to rule this earth.",
+	"description": "Once Dragons used to rule this earth.",
 	"authors": [
 		"PrangellPlays"
 	],
+	"contact": {
+		"issues": "https://github.com/PrangellPlays/OnceThereWereDragons/issues",
+		"sources": "https://github.com/PrangellPlays/OnceThereWereDragons"
+	},
 	"license": "All Rights Reserved",
 	"icon": "assets/otwd/icon.png",
 	"environment": "*",
