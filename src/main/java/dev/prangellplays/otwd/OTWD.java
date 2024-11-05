@@ -1,8 +1,6 @@
 package dev.prangellplays.otwd;
 
-import dev.prangellplays.otwd.init.OTWDBlocks;
-import dev.prangellplays.otwd.init.OTWDItemGroups;
-import dev.prangellplays.otwd.init.OTWDItems;
+import dev.prangellplays.otwd.init.*;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -18,6 +16,8 @@ public class OTWD implements ModInitializer {
 		OTWDBlocks.init();
 		OTWDItems.init();
 		OTWDItemGroups.init();
+		OTWDBlockEntities.init();
+		OTWDRecipes.init();
 	}
 
 	public static Identifier id(String path) {

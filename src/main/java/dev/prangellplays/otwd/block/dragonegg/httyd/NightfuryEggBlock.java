@@ -26,6 +26,7 @@ import java.util.List;
 
 public class NightfuryEggBlock extends Block {
     private static final VoxelShape SHAPE = VoxelShapes.union(VoxelShapes.cuboid(0.28125, 0.0625, 0.28125, 0.71875, 0.375, 0.71875), VoxelShapes.cuboid(0.3125, 0, 0.3125, 0.6875, 0.0625, 0.6875), VoxelShapes.cuboid(0.3125, 0.375, 0.3125, 0.6875, 0.5, 0.6875), VoxelShapes.cuboid(0.375, 0.5, 0.375, 0.625, 0.5625, 0.625));
+
     public NightfuryEggBlock(Settings settings) {
         super(settings);
     }
@@ -40,32 +41,8 @@ public class NightfuryEggBlock extends Block {
         return SHAPE;
     }
 
-    public static class NightfuryEggIncubated extends Item {
-        public NightfuryEggIncubated(Settings settings) {
-            super(settings);
-        }
-
-        @Override
-        public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-            Entity entity = ((EntityType<Entity>) EntityType.get("minecraft:wolf").get()).create(world);
-            if (entity instanceof WolfEntity wolf) {
-                wolf.setOwner(user);
-            }
-            entity.setPosition(raycast(world, user, RaycastContext.FluidHandling.NONE).getPos());
-            world.spawnEntity(entity);
-            if (!user.isCreative()) {
-                if (user.getMainHandStack().isOf(this)) {
-                    user.getMainHandStack().decrement(1);
-                } else if (user.getOffHandStack().isOf(this)) {
-                    user.getOffHandStack().decrement(1);
-                }
-            }
-            return super.use(world, user, hand);
-        }
-
-        @Override
-        public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-            tooltip.add(Text.translatable("block.otwd.dragon_egg.incubated").formatted(Formatting.GRAY).append(Text.literal(": ").formatted(Formatting.GRAY)).append(Text.translatable("block.otwd.dragon_egg.incubated.true").formatted(Formatting.GREEN)));
-        }
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
+        tooltip.add(Text.translatable("block.otwd.dragon_egg.incubated").formatted(Formatting.GRAY).append(Text.literal(": ").formatted(Formatting.GRAY)).append(Text.translatable("block.otwd.dragon_egg.incubated.false").formatted(Formatting.RED)));
     }
 }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "otwd:block/dragon_egg_incubator_hot",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "otwd:block/dragon_egg_incubator_hot"
+    },
+    "facing=south": {
+      "model": "otwd:block/dragon_egg_incubator_hot",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "otwd:block/dragon_egg_incubator_hot",
+      "y": 270
+    }
+  }
+}

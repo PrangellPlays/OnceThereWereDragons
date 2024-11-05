@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "particle": "otwd:block/incubator/dragon_egg_incubator_side",
+    "down": "otwd:block/incubator/dragon_egg_incubator_bottom",
+    "up": "otwd:block/incubator/cold/dragon_egg_incubator_cold_top",
+    "north": "otwd:block/incubator/cold/dragon_egg_incubator_cold_front",
+    "east": "otwd:block/incubator/dragon_egg_incubator_side",
+    "south": "otwd:block/incubator/dragon_egg_incubator_side",
+    "west": "otwd:block/incubator/dragon_egg_incubator_side"
+  }
+}

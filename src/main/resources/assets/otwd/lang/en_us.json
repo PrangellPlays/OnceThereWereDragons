@@ -9,9 +9,12 @@
   "block.otwd.dragon_egg.incubated.false": "False",
   "block.otwd.nightfury_egg": "Night Fury Egg",
 
+  "block.otwd.dragon_egg_incubator_hot": "Dragon Egg Incubator (Hot)",
+  "block.otwd.dragon_egg_incubator_cold": "Dragon Egg Incubator (Cold)",
+
 
   "__Comment": "Item Group",
-  "itemgroup.otwd.items": "OTWD Dragon Eggs",
+  "itemgroup.otwd.items": "OTWD Items",
   "itemgroup.otwd.dragon_egg": "OTWD Dragon Eggs",
 
   "__Comment": "Death Message",
@@ -24,5 +27,9 @@
 
 
   "__Comment": "Entity",
-  "entity.otwd.nightfury": "Night Fury"
+  "entity.otwd.nightfury": "Night Fury",
+
+  "__Comment": "Tooltip",
+  "tooltip.otwd.liquid.amount.with.capacity": "%s / %s mB",
+  "tooltip.otwd.liquid.amount": "%s mB"
 }
