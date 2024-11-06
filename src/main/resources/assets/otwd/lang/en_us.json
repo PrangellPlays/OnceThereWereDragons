@@ -2,12 +2,14 @@
   "__Comment": "Items",
   "item.otwd.dragon_saddle": "Dragon Saddle",
   "item.otwd.nightfury_egg_incubated": "Night Fury Egg",
+  "item.otwd.deadly_nadder_egg_incubated": "Deadly Nadder Egg",
 
   "__Comment": "Blocks",
   "block.otwd.dragon_egg.incubated": "Incubated",
   "block.otwd.dragon_egg.incubated.true": "True",
   "block.otwd.dragon_egg.incubated.false": "False",
   "block.otwd.nightfury_egg": "Night Fury Egg",
+  "block.otwd.deadly_nadder_egg": "Deadly Nadder Egg",
 
   "block.otwd.dragon_egg_incubator_hot": "Dragon Egg Incubator (Hot)",
   "block.otwd.dragon_egg_incubator_cold": "Dragon Egg Incubator (Cold)",

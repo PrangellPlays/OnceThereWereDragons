@@ -2,6 +2,7 @@ package dev.prangellplays.otwd.init;
 
 import dev.prangellplays.otwd.OTWD;
 import dev.prangellplays.otwd.block.dragonegg.httyd.NightfuryEggBlock;
+import dev.prangellplays.otwd.item.dragonegg.httyd.DeadlyNadderIncubatedItem;
 import dev.prangellplays.otwd.item.dragonegg.httyd.NightfuryEggIncubatedItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
@@ -20,6 +21,7 @@ public class OTWDItems {
     //Incubated Dragon Egg
     //HTTYD
     public static final Item NIGHTFURY_EGG_INCUBATED;
+    public static final Item DEADLY_NADDER_EGG_INCUBATED;
 
     public static void init() {
         ITEMS.forEach((item, id) -> {
@@ -41,5 +43,6 @@ public class OTWDItems {
         //Incubated Dragon Egg
         //HTTYD
         NIGHTFURY_EGG_INCUBATED = register((String) "nightfury_egg_incubated", (Item) (new NightfuryEggIncubatedItem(new FabricItemSettings().maxCount(1).fireproof())));
+        DEADLY_NADDER_EGG_INCUBATED = register((String) "deadly_nadder_egg_incubated", (Item) (new DeadlyNadderIncubatedItem(new FabricItemSettings().maxCount(1).fireproof())));
     }
 }

@@ -20,6 +20,7 @@ public class OTWDItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.otwd.dragon_egg")).icon(() -> new ItemStack(OTWDBlocks.NIGHTFURY_EGG)).entries((displayContext, entries) -> {
                 //HTTYD
                 entries.add(OTWDBlocks.NIGHTFURY_EGG);
+                entries.add(OTWDBlocks.DEADLY_NADDER_EGG);
 
                 //OTWD
 

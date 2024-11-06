@@ -1,0 +1,11 @@
+{
+  "type": "otwd:dragon_egg_incubator_hot",
+  "ingredients": [
+    {
+      "item": "otwd:deadly_nadder_egg"
+    }
+  ],
+  "output": {
+    "item": "otwd:deadly_nadder_egg_incubated"
+  }
+}

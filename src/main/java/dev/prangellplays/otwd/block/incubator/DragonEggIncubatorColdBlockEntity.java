@@ -146,7 +146,7 @@ public class DragonEggIncubatorColdBlockEntity extends BlockEntity implements Ex
     }
 
     private void extractFluid() {
-        if (this.getStack(OUTPUT_SLOT).isIn(OTWDTags.Items.INCUBATED_DRAGON_EGG))
+        if (this.getStack(OUTPUT_SLOT).getItem() == null)
             try(Transaction transaction = Transaction.openOuter()) {
                 this.fluidStorage.extract(FluidVariant.of(Fluids.LAVA), 2500, transaction);
                 transaction.commit();

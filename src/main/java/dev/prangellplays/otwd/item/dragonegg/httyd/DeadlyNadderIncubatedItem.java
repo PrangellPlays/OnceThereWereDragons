@@ -1,8 +1,5 @@
 package dev.prangellplays.otwd.item.dragonegg.httyd;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.ShapeContext;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -14,18 +11,14 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.util.shape.VoxelShapes;
-import net.minecraft.world.BlockView;
 import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class NightfuryEggIncubatedItem extends Item {
-    public NightfuryEggIncubatedItem(Settings settings) {
+public class DeadlyNadderIncubatedItem extends Item {
+    public DeadlyNadderIncubatedItem(Settings settings) {
         super(settings);
     }
 
@@ -35,7 +28,7 @@ public class NightfuryEggIncubatedItem extends Item {
         if (entity instanceof WolfEntity wolf) {
             wolf.setOwner(user);
         }
-        entity.setCustomName(Text.literal("Night fury"));
+        entity.setCustomName(Text.literal("Deadly Nadder"));
         entity.setPosition(raycast(world, user, RaycastContext.FluidHandling.NONE).getPos());
         world.spawnEntity(entity);
         if (!user.isCreative()) {

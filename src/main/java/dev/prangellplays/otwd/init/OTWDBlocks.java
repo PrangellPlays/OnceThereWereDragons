@@ -1,6 +1,7 @@
 package dev.prangellplays.otwd.init;
 
 import dev.prangellplays.otwd.OTWD;
+import dev.prangellplays.otwd.block.dragonegg.httyd.DeadlyNadderEggBlock;
 import dev.prangellplays.otwd.block.dragonegg.httyd.NightfuryEggBlock;
 import dev.prangellplays.otwd.block.incubator.DragonEggIncubatorColdBlock;
 import dev.prangellplays.otwd.block.incubator.DragonEggIncubatorHotBlock;
@@ -24,6 +25,7 @@ public class OTWDBlocks {
     //DRAGON EGG
     //HTTYD
     public static final Block NIGHTFURY_EGG;
+    public static final Block DEADLY_NADDER_EGG;
 
     //OTWD
 
@@ -65,6 +67,7 @@ public class OTWDBlocks {
         //DRAGON EGG
         //HTTYD
         NIGHTFURY_EGG = registerWithItem("nightfury_egg", new NightfuryEggBlock(AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(0.5F).sounds(BlockSoundGroup.METAL).nonOpaque().notSolid()));
+        DEADLY_NADDER_EGG = registerWithItem("deadly_nadder_egg", new DeadlyNadderEggBlock(AbstractBlock.Settings.create().mapColor(MapColor.DIAMOND_BLUE).strength(0.5F).sounds(BlockSoundGroup.METAL).nonOpaque().notSolid()));
 
         //OTWD
 
