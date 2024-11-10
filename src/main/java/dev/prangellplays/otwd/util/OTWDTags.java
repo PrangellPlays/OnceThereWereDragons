@@ -25,6 +25,7 @@ public class OTWDTags {
         public static final TagKey<Item> INCUBATED_DRAGON_EGG = createItemTag("incubated_dragon_egg");
         public static final TagKey<Item> GRONCKLE_IRON = createItemTag("gronckle_iron");
         public static final TagKey<Item> INCUBATOR = createItemTag("incubator");
+        public static final TagKey<Item> POUCH = createItemTag("pouch");
 
         private static TagKey<Item> createItemTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(OTWD.MOD_ID, name));
