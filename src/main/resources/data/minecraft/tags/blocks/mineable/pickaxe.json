@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     "otwd:nightfury_egg",
-    "otwd:deadly_nadder_egg"
+    "otwd:deadly_nadder_egg",
+    "otwd:dragon_egg_incubator_hot",
+    "otwd:dragon_egg_incubator_cold",
+    "otwd:gronckle_iron_ore",
+    "otwd:gronckle_iron_block"
   ]
 }

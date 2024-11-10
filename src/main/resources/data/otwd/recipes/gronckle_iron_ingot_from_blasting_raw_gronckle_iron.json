@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "gronckle_iron_ingot",
+  "ingredient": {
+    "item": "otwd:raw_gronckle_iron"
+  },
+  "result": "otwd:gronckle_iron_ingot"
+}

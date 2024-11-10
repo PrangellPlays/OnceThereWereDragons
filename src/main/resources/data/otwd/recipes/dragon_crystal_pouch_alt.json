@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SAS",
+    "NPN",
+    " A "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:string"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "P": {
+      "item": "otwd:pouch"
+    }
+  },
+  "result": {
+    "item": "otwd:dragon_crystal_pouch"
+  }
+}

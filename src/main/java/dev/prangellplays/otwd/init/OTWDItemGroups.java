@@ -14,6 +14,15 @@ public class OTWDItemGroups {
             new Identifier(OTWD.MOD_ID, "otwd_items"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.otwd.items")).icon(() -> new ItemStack(OTWDItems.DRAGON_SADDLE)).entries((displayContext, entries) -> {
                 entries.add(OTWDItems.DRAGON_SADDLE);
+                entries.add(OTWDBlocks.DRAGON_EGG_INCUBATOR_HOT);
+                entries.add(OTWDBlocks.DRAGON_EGG_INCUBATOR_COLD);
+                entries.add(OTWDItems.DRAGON_CRYSTAL);
+                entries.add(OTWDItems.GRONCKLE_IRON_INGOT);
+                entries.add(OTWDItems.RAW_GRONCKLE_IRON);
+                entries.add(OTWDBlocks.GRONCKLE_IRON_ORE);
+                entries.add(OTWDBlocks.GRONCKLE_IRON_BLOCK);
+                entries.add(OTWDItems.POUCH);
+                entries.add(OTWDItems.DRAGON_CRYSTAL_POUCH);
             }).build());
     public static final ItemGroup OTWD_DRAGON_EGGS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OTWD.MOD_ID, "otwd_dragon_eggs"),

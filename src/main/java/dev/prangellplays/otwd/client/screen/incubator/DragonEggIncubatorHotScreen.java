@@ -17,7 +17,7 @@ import net.minecraft.util.Identifier;
 import java.util.Optional;
 
 public class DragonEggIncubatorHotScreen extends HandledScreen<DragonEggIncubatorHotScreenHandler> {
-        private static final Identifier TEXTURE = new Identifier(OTWD.MOD_ID, "textures/gui/dragon_egg_incubator_gui.png");
+        private static final Identifier TEXTURE = new Identifier(OTWD.MOD_ID, "textures/gui/incubator/dragon_egg_incubator_gui.png");
         private FluidStackRenderer fluidStackRenderer;
 
         public DragonEggIncubatorHotScreen(DragonEggIncubatorHotScreenHandler handler, PlayerInventory inventory, Text title) {

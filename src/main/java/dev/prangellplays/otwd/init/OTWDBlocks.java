@@ -8,6 +8,7 @@ import dev.prangellplays.otwd.block.incubator.DragonEggIncubatorHotBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.enums.Instrument;
 import net.minecraft.item.BlockItem;
@@ -22,7 +23,7 @@ import java.util.function.Function;
 
 public class OTWDBlocks {
     protected static final Map<Block, Identifier> BLOCKS = new LinkedHashMap();
-    //DRAGON EGG
+    //Dragon Egg
     //HTTYD
     public static final Block NIGHTFURY_EGG;
     public static final Block DEADLY_NADDER_EGG;
@@ -30,7 +31,11 @@ public class OTWDBlocks {
     //OTWD
 
 
-    //INCUBATOR
+    //Gronckle Iron
+    public static final Block GRONCKLE_IRON_ORE;
+    public static final Block GRONCKLE_IRON_BLOCK;
+
+    //Incubator
     public static final Block DRAGON_EGG_INCUBATOR_COLD;
     public static final Block DRAGON_EGG_INCUBATOR_HOT;
 
@@ -64,7 +69,7 @@ public class OTWDBlocks {
     }
 
     static {
-        //DRAGON EGG
+        //Dragon Egg
         //HTTYD
         NIGHTFURY_EGG = registerWithItem("nightfury_egg", new NightfuryEggBlock(AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(0.5F).sounds(BlockSoundGroup.METAL).nonOpaque().notSolid()));
         DEADLY_NADDER_EGG = registerWithItem("deadly_nadder_egg", new DeadlyNadderEggBlock(AbstractBlock.Settings.create().mapColor(MapColor.DIAMOND_BLUE).strength(0.5F).sounds(BlockSoundGroup.METAL).nonOpaque().notSolid()));
@@ -72,7 +77,11 @@ public class OTWDBlocks {
         //OTWD
 
 
-        //INCUBATOR
+        //Gronckle Iron
+        GRONCKLE_IRON_ORE = registerWithItem("gronckle_iron_ore", new ExperienceDroppingBlock(AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).instrument(Instrument.BASEDRUM).requiresTool().strength(3.0F, 3.0F)));
+        GRONCKLE_IRON_BLOCK = registerWithItem("gronckle_iron_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.IRON_GRAY).instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.METAL)));
+
+        //Incubator
         DRAGON_EGG_INCUBATOR_COLD = registerWithItem("dragon_egg_incubator_cold", new DragonEggIncubatorColdBlock(AbstractBlock.Settings.create().mapColor(MapColor.IRON_GRAY).instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.METAL)));
         DRAGON_EGG_INCUBATOR_HOT = registerWithItem("dragon_egg_incubator_hot", new DragonEggIncubatorHotBlock(AbstractBlock.Settings.create().mapColor(MapColor.IRON_GRAY).instrument(Instrument.IRON_XYLOPHONE).requiresTool().strength(5.0F, 6.0F).sounds(BlockSoundGroup.METAL)));
     }

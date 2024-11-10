@@ -20,14 +20,11 @@ public class OTWDTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> DRAGON_EGG_HOT =
-                createItemTag("dragon_egg_hot");
-
-        public static final TagKey<Item> DRAGON_EGG_COLD =
-                createItemTag("dragon_egg_cold");
-
-        public static final TagKey<Item> INCUBATED_DRAGON_EGG =
-                createItemTag("incubated_dragon_egg");
+        public static final TagKey<Item> DRAGON_EGG_HOT = createItemTag("dragon_egg_hot");
+        public static final TagKey<Item> DRAGON_EGG_COLD = createItemTag("dragon_egg_cold");
+        public static final TagKey<Item> INCUBATED_DRAGON_EGG = createItemTag("incubated_dragon_egg");
+        public static final TagKey<Item> GRONCKLE_IRON = createItemTag("gronckle_iron");
+        public static final TagKey<Item> INCUBATOR = createItemTag("incubator");
 
         private static TagKey<Item> createItemTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(OTWD.MOD_ID, name));
@@ -36,5 +33,8 @@ public class OTWDTags {
         private static TagKey<Item> createCommonItemTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier("c", name));
         }
+    }
+
+    public static void init() {
     }
 }

@@ -1,7 +1,9 @@
 package dev.prangellplays.otwd.init;
 
 import dev.prangellplays.otwd.OTWD;
-import dev.prangellplays.otwd.block.dragonegg.httyd.NightfuryEggBlock;
+import dev.prangellplays.otwd.item.DragonCrystalItem;
+import dev.prangellplays.otwd.item.pouch.DragonCrystalPouchItem;
+import dev.prangellplays.otwd.item.pouch.PouchItem;
 import dev.prangellplays.otwd.item.dragonegg.httyd.DeadlyNadderIncubatedItem;
 import dev.prangellplays.otwd.item.dragonegg.httyd.NightfuryEggIncubatedItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -17,6 +19,15 @@ import java.util.Map;
 public class OTWDItems {
     protected static final Map<Item, Identifier> ITEMS = new LinkedHashMap();
     public static final Item DRAGON_SADDLE;
+    public static final Item DRAGON_CRYSTAL;
+
+    //Gronckle Iron
+    public static final Item GRONCKLE_IRON_INGOT;
+    public static final Item RAW_GRONCKLE_IRON;
+
+    //Pouch
+    public static final Item POUCH;
+    public static final Item DRAGON_CRYSTAL_POUCH;
 
     //Incubated Dragon Egg
     //HTTYD
@@ -39,6 +50,15 @@ public class OTWDItems {
 
     static {
         DRAGON_SADDLE = register((String) "dragon_saddle", (Item) (new Item(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.COMMON))));
+        DRAGON_CRYSTAL = register((String) "dragon_crystal", (Item) (new DragonCrystalItem(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.COMMON))));
+
+        //Gronckle Iron
+        GRONCKLE_IRON_INGOT = register((String) "gronckle_iron_ingot", (Item) (new Item(new FabricItemSettings().fireproof().rarity(Rarity.COMMON))));
+        RAW_GRONCKLE_IRON = register((String) "raw_gronckle_iron", (Item) (new Item(new FabricItemSettings().fireproof().rarity(Rarity.COMMON))));
+
+        //Pouch
+        POUCH = register((String) "pouch", (Item) (new PouchItem(new FabricItemSettings().maxCount(1).rarity(Rarity.COMMON))));
+        DRAGON_CRYSTAL_POUCH = register((String) "dragon_crystal_pouch", (Item) (new DragonCrystalPouchItem(new FabricItemSettings().fireproof().maxCount(1).rarity(Rarity.COMMON))));
 
         //Incubated Dragon Egg
         //HTTYD

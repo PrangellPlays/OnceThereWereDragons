@@ -1,8 +1,17 @@
 {
   "__Comment": "Items",
   "item.otwd.dragon_saddle": "Dragon Saddle",
+  "item.otwd.dragon_crystal": "Dragon Crystal",
+  "item.otwd.dragon_crystal.cannot_capture": "Cannot capture entity, the entity is not a dragon",
+  "item.otwd.dragon_crystal.captured": "Captured Dragon",
+  "item.otwd.dragon_crystal.no_dragon": "No Dragon Captured",
+  "item.otwd.pouch": "Pouch",
+  "item.otwd.dragon_crystal_pouch": "Dragon Crystal Pouch",
   "item.otwd.nightfury_egg_incubated": "Night Fury Egg",
   "item.otwd.deadly_nadder_egg_incubated": "Deadly Nadder Egg",
+
+  "item.otwd.raw_gronckle_iron": "Raw Gronckle Iron",
+  "item.otwd.gronckle_iron_ingot": "Gronckle Iron Ingot",
 
   "__Comment": "Blocks",
   "block.otwd.dragon_egg.incubated": "Incubated",
@@ -13,6 +22,9 @@
 
   "block.otwd.dragon_egg_incubator_hot": "Dragon Egg Incubator (Hot)",
   "block.otwd.dragon_egg_incubator_cold": "Dragon Egg Incubator (Cold)",
+
+  "block.otwd.gronckle_iron_ore": "Gronckle Iron Ore",
+  "block.otwd.gronckle_iron_block": "Block Of Gronckle Iron",
 
 
   "__Comment": "Item Group",
@@ -26,7 +38,13 @@
 
 
   "__Comment": "Keybinding",
-
+  "category.otwd": "Once there were Dragons",
+  "key.otwd.hover": "Hover",
+  "key.otwd.melee_attack": "Melee Attack",
+  "key.otwd.primary_attack": "Primary Attack",
+  "key.otwd.secondary_attack": "Secondary Attack",
+  "key.otwd.increase_speed": "Increase Flight Speed",
+  "key.otwd.decrease_speed": "Decrease Flight Speed",
 
   "__Comment": "Entity",
   "entity.otwd.nightfury": "Night Fury",
