@@ -39,3 +39,4 @@ replay_*.log
 *.hprof
 *.jfr
 /src/main/resources/assets/otwd/textures/item/pouch/pouch.aseprite
+/src/main/resources/assets/otwd/textures/item/pouch/dragon_crystal_pouch.aseprite
