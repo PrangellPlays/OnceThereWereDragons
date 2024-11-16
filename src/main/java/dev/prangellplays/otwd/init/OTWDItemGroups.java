@@ -23,6 +23,9 @@ public class OTWDItemGroups {
                 entries.add(OTWDBlocks.GRONCKLE_IRON_BLOCK);
                 entries.add(OTWDItems.POUCH);
                 entries.add(OTWDItems.DRAGON_CRYSTAL_POUCH);
+                entries.add(OTWDItems.DRAGON_MANUAL);
+                entries.add(OTWDBlocks.LIMESTONE);
+                entries.add(OTWDItems.IRON_MIX);
             }).build());
     public static final ItemGroup OTWD_DRAGON_EGGS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OTWD.MOD_ID, "otwd_dragon_eggs"),
@@ -30,6 +33,8 @@ public class OTWDItemGroups {
                 //HTTYD
                 entries.add(OTWDBlocks.NIGHTFURY_EGG);
                 entries.add(OTWDBlocks.DEADLY_NADDER_EGG);
+                entries.add(OTWDBlocks.LIGHTFURY_EGG);
+                entries.add(OTWDBlocks.NIGHTLIGHT_EGG);
 
                 //OTWD
 

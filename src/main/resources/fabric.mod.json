@@ -23,6 +23,9 @@
 		],
 		"fabric-datagen": [
 			"dev.prangellplays.otwd.OTWDDataGenerator"
+		],
+		"modmenu": [
+			"dev.prangellplays.otwd.compat.ModMenuCompat"
 		]
 	},
 	"mixins": [
@@ -33,9 +36,11 @@
 		"fabricloader": ">=0.16.9",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"midnightlib": "*",
+		"geckolib": ">=4.4.6"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"modmenu": "*"
 	}
 }

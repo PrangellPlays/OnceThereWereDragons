@@ -4,6 +4,7 @@ import dev.prangellplays.otwd.client.screen.OTWDScreenHandlers;
 import dev.prangellplays.otwd.event.DragonCrystalEventHandler;
 import dev.prangellplays.otwd.init.*;
 import dev.prangellplays.otwd.util.OTWDTags;
+import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.minecraft.item.ItemStack;
@@ -26,13 +27,13 @@ public class OTWD implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		MidnightConfig.init(MOD_ID, OTWDConfig.class);
 		OTWDBlocks.init();
 		OTWDItems.init();
 		OTWDItemGroups.init();
 		OTWDBlockEntities.init();
 		OTWDRecipes.init();
 		OTWDTags.init();
-		OTWDScreenHandlers.init();
 
 		DragonCrystalEventHandler.init();
 		whitelist();

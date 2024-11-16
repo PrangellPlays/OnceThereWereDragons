@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MS ",
+    "SIL",
+    " LL"
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:magma_block"
+    },
+    "S": {
+      "item": "minecraft:sandstone"
+    },
+    "I": {
+      "item": "minecraft:raw_iron"
+    },
+    "L": {
+      "item": "otwd:limestone"
+    }
+  },
+  "result": {
+    "item": "otwd:iron_mix"
+  }
+}

@@ -24,6 +24,7 @@ public class OTWDClient implements ClientModInitializer {
     public static KeyBinding meleeAttack;
     public static KeyBinding primaryAttack;
     public static KeyBinding secondaryAttack;
+    public static KeyBinding specialAbility;
     public static KeyBinding increaseSpeed;
     public static KeyBinding decreaseSpeed;
 
@@ -32,6 +33,10 @@ public class OTWDClient implements ClientModInitializer {
         //Block Render Layer Map
         BlockRenderLayerMap.INSTANCE.putBlock(OTWDBlocks.NIGHTFURY_EGG, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(OTWDBlocks.DEADLY_NADDER_EGG, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(OTWDBlocks.LIGHTFURY_EGG, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(OTWDBlocks.NIGHTLIGHT_EGG, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(OTWDBlocks.DRAGON_MANUAL_PLACED, RenderLayer.getCutout());
 
         //Block Entity Renderer
         BlockEntityRendererFactories.register(OTWDBlockEntities.DRAGON_EGG_INCUBATOR_HOT, DragonEggIncubatorHotRenderer::new);
@@ -48,6 +53,7 @@ public class OTWDClient implements ClientModInitializer {
         meleeAttack = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.otwd.melee_attack", InputUtil.Type.KEYSYM, 71, "category.otwd"));
         primaryAttack = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.otwd.primary_attack", InputUtil.Type.KEYSYM, 321, "category.otwd"));
         secondaryAttack = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.otwd.secondary_attack", InputUtil.Type.KEYSYM, 322, "category.otwd"));
+        specialAbility = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.otwd.special_ability", InputUtil.Type.KEYSYM, 323, "category.otwd"));
         increaseSpeed = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.otwd.increase_speed", InputUtil.Type.KEYSYM, 32, "category.otwd"));
         decreaseSpeed = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.otwd.decrease_speed", InputUtil.Type.KEYSYM, 341, "category.otwd"));
     }

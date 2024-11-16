@@ -1,0 +1,11 @@
+{
+  "type": "otwd:dragon_egg_incubator_hot",
+  "ingredients": [
+    {
+      "item": "otwd:lightfury_egg"
+    }
+  ],
+  "output": {
+    "item": "otwd:lightfury_egg_incubated"
+  }
+}

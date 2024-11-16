@@ -2,6 +2,10 @@ package dev.prangellplays.otwd.init;
 
 import dev.prangellplays.otwd.OTWD;
 import dev.prangellplays.otwd.item.DragonCrystalItem;
+import dev.prangellplays.otwd.item.DragonManualItem;
+import dev.prangellplays.otwd.item.IronMixItem;
+import dev.prangellplays.otwd.item.dragonegg.httyd.LightfuryEggIncubatedItem;
+import dev.prangellplays.otwd.item.dragonegg.httyd.NightlightEggIncubatedItem;
 import dev.prangellplays.otwd.item.pouch.DragonCrystalPouchItem;
 import dev.prangellplays.otwd.item.pouch.PouchItem;
 import dev.prangellplays.otwd.item.dragonegg.httyd.DeadlyNadderIncubatedItem;
@@ -20,6 +24,8 @@ public class OTWDItems {
     protected static final Map<Item, Identifier> ITEMS = new LinkedHashMap();
     public static final Item DRAGON_SADDLE;
     public static final Item DRAGON_CRYSTAL;
+    public static final Item DRAGON_MANUAL;
+    public static final Item IRON_MIX;
 
     //Gronckle Iron
     public static final Item GRONCKLE_IRON_INGOT;
@@ -33,6 +39,8 @@ public class OTWDItems {
     //HTTYD
     public static final Item NIGHTFURY_EGG_INCUBATED;
     public static final Item DEADLY_NADDER_EGG_INCUBATED;
+    public static final Item LIGHTFURY_EGG_INCUBATED;
+    public static final Item NIGHTLIGHT_EGG_INCUBATED;
 
     public static void init() {
         ITEMS.forEach((item, id) -> {
@@ -51,6 +59,8 @@ public class OTWDItems {
     static {
         DRAGON_SADDLE = register((String) "dragon_saddle", (Item) (new Item(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.COMMON))));
         DRAGON_CRYSTAL = register((String) "dragon_crystal", (Item) (new DragonCrystalItem(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.COMMON))));
+        DRAGON_MANUAL = register((String) "dragon_manual", (Item) (new DragonManualItem(new FabricItemSettings().maxCount(1).rarity(Rarity.COMMON))));
+        IRON_MIX = register((String) "iron_mix", (Item) (new IronMixItem(new FabricItemSettings().rarity(Rarity.COMMON))));
 
         //Gronckle Iron
         GRONCKLE_IRON_INGOT = register((String) "gronckle_iron_ingot", (Item) (new Item(new FabricItemSettings().fireproof().rarity(Rarity.COMMON))));
@@ -64,5 +74,7 @@ public class OTWDItems {
         //HTTYD
         NIGHTFURY_EGG_INCUBATED = register((String) "nightfury_egg_incubated", (Item) (new NightfuryEggIncubatedItem(new FabricItemSettings().maxCount(1).fireproof())));
         DEADLY_NADDER_EGG_INCUBATED = register((String) "deadly_nadder_egg_incubated", (Item) (new DeadlyNadderIncubatedItem(new FabricItemSettings().maxCount(1).fireproof())));
+        LIGHTFURY_EGG_INCUBATED = register((String) "lightfury_egg_incubated", (Item) (new LightfuryEggIncubatedItem(new FabricItemSettings().maxCount(1).fireproof())));
+        NIGHTLIGHT_EGG_INCUBATED = register((String) "nightlight_egg_incubated", (Item) (new NightlightEggIncubatedItem(new FabricItemSettings().maxCount(1).fireproof())));
     }
 }

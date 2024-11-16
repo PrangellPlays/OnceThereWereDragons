@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "otwd:nightfury_egg_incubated",
-    "otwd:deadly_nadder_egg_incubated"
+    "otwd:deadly_nadder_egg_incubated",
+    "otwd:lightfury_egg_incubated",
+    "otwd:nightlight_egg_incubated"
   ]
 }

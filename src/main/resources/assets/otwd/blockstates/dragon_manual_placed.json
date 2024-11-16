@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "otwd:block/dragon_manual_placed",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "otwd:block/dragon_manual_placed"
+    },
+    "facing=south": {
+      "model": "otwd:block/dragon_manual_placed",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "otwd:block/dragon_manual_placed",
+      "y": 270
+    }
+  }
+}

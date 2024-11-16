@@ -7,8 +7,18 @@
   "item.otwd.dragon_crystal.no_dragon": "No Dragon Captured",
   "item.otwd.pouch": "Pouch",
   "item.otwd.dragon_crystal_pouch": "Dragon Crystal Pouch",
+  "item.otwd.dragon_manual": "The Book Of Dragons",
+
+  "item.otwd.iron_mix": "Iron Mix",
+  "item.otwd.iron_mix.limestone": "3 parts Limestone",
+  "item.otwd.iron_mix.sandstone": "2 parts Sandstone",
+  "item.otwd.iron_mix.iron_ore": "1 part Raw Iron",
+  "item.otwd.iron_mix.magma": "1 part Magma",
+
   "item.otwd.nightfury_egg_incubated": "Night Fury Egg",
   "item.otwd.deadly_nadder_egg_incubated": "Deadly Nadder Egg",
+  "item.otwd.lightfury_egg_incubated": "Light Fury Egg",
+  "item.otwd.nightlight_egg_incubated": "Night Light Egg",
 
   "item.otwd.raw_gronckle_iron": "Raw Gronckle Iron",
   "item.otwd.gronckle_iron_ingot": "Gronckle Iron Ingot",
@@ -17,8 +27,11 @@
   "block.otwd.dragon_egg.incubated": "Incubated",
   "block.otwd.dragon_egg.incubated.true": "True",
   "block.otwd.dragon_egg.incubated.false": "False",
+
   "block.otwd.nightfury_egg": "Night Fury Egg",
   "block.otwd.deadly_nadder_egg": "Deadly Nadder Egg",
+  "block.otwd.lightfury_egg": "Light Fury Egg",
+  "block.otwd.nightlight_egg": "Night Light Egg",
 
   "block.otwd.dragon_egg_incubator_hot": "Dragon Egg Incubator (Hot)",
   "block.otwd.dragon_egg_incubator_cold": "Dragon Egg Incubator (Cold)",
@@ -26,6 +39,9 @@
   "block.otwd.gronckle_iron_ore": "Gronckle Iron Ore",
   "block.otwd.gronckle_iron_block": "Block Of Gronckle Iron",
 
+  "block.otwd.limestone": "Limestone",
+
+  "block.otwd.dragon_manual_placed": "The Book Of Dragons",
 
   "__Comment": "Item Group",
   "itemgroup.otwd.items": "OTWD Items",
@@ -43,13 +59,34 @@
   "key.otwd.melee_attack": "Melee Attack",
   "key.otwd.primary_attack": "Primary Attack",
   "key.otwd.secondary_attack": "Secondary Attack",
+  "key.otwd.special_ability": "Special Ability",
+  "key.otwd.alpha_toggle": "Alpha Toggle",
   "key.otwd.increase_speed": "Increase Flight Speed",
   "key.otwd.decrease_speed": "Decrease Flight Speed",
 
   "__Comment": "Entity",
   "entity.otwd.nightfury": "Night Fury",
+  "entity.otwd.deadly_nadder": "Deadly Nadder",
+  "entity.otwd.nightlight": "Night Light",
+  "entity.otwd.lightfury": "Light Fury",
 
   "__Comment": "Tooltip",
+  "block.minecraft.empty": "Empty",
   "tooltip.otwd.liquid.amount.with.capacity": "%s / %s mB",
-  "tooltip.otwd.liquid.amount": "%s mB"
+  "tooltip.otwd.liquid.amount": "%s mB",
+
+  "__Comment": "Screen",
+  "screen.otwd.dragon_manual": "The Book Of Dragons",
+
+  "__Comment": "Config",
+  "otwd.midnightconfig.title": "Once there were Dragons",
+  "otwd.midnightconfig.category.otwd": "OTWD",
+  "otwd.midnightconfig.enableHTTYD": "Enable HTTYD Dragons",
+  "otwd.midnightconfig.enableHTTYD.tooltip": "HTTYD dragon spawning\nHTTYD dragon nest generation",
+  "otwd.midnightconfig.enableOTWD": "Enable OTWD Dragons",
+  "otwd.midnightconfig.enableOTWD.tooltip": "OTWD dragon spawning\nOTWD dragon nest generation",
+  "otwd.midnightconfig.dragonBreak": "Dragons explosions break blocks",
+  "otwd.midnightconfig.dragonBreak.tooltip": "Overides MobGriefing Gamerule",
+  "otwd.midnightconfig.roleplay": "Roleplay Mode",
+  "otwd.midnightconfig.roleplay.tooltip": "Disables natural dragon spawning\nDisables dragon nest generation"
 }

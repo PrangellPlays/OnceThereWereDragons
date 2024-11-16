@@ -2,8 +2,6 @@ package dev.prangellplays.otwd.block.incubator;
 
 import dev.prangellplays.otwd.client.screen.incubator.DragonEggIncubatorHotScreenHandler;
 import dev.prangellplays.otwd.init.OTWDBlockEntities;
-import dev.prangellplays.otwd.init.OTWDBlocks;
-import dev.prangellplays.otwd.init.OTWDItems;
 import dev.prangellplays.otwd.recipe.DragonEggIncubatorHotRecipe;
 import dev.prangellplays.otwd.util.ImplementedInventory;
 import dev.prangellplays.otwd.util.OTWDTags;
@@ -148,10 +146,10 @@ public class DragonEggIncubatorHotBlockEntity extends BlockEntity implements Ext
     }
 
     private void extractFluid() {
-            try(Transaction transaction = Transaction.openOuter()) {
-                this.fluidStorage.extract(FluidVariant.of(Fluids.LAVA), 2500, transaction);
-                transaction.commit();
-            }
+        try(Transaction transaction = Transaction.openOuter()) {
+            this.fluidStorage.extract(FluidVariant.of(Fluids.LAVA), 2500, transaction);
+            transaction.commit();
+        }
     }
 
     private void fillUpOnFluid() {
@@ -177,9 +175,9 @@ public class DragonEggIncubatorHotBlockEntity extends BlockEntity implements Ext
     private void craftItem() {
         Optional<DragonEggIncubatorHotRecipe> recipe = getCurrentRecipe();
 
-            this.removeStack(INPUT_SLOT, 1);
-            this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().getOutput(null).getItem(), this.getStack(OUTPUT_SLOT).getCount() + recipe.get().getOutput(null).getCount()));
-            this.hasCraftingFinished();
+        this.removeStack(INPUT_SLOT, 1);
+        this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().getOutput(null).getItem(), this.getStack(OUTPUT_SLOT).getCount() + recipe.get().getOutput(null).getCount()));
+        this.hasCraftingFinished();
     }
 
     private void resetProgress() {

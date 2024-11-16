@@ -31,6 +31,7 @@ public class DragonEggIncubatorColdRenderer implements BlockEntityRenderer<Drago
                 World world = player.getWorld();
                 float bob = (float) (Math.sin((player.age + tickDelta) * 0.1f) * 0.035f);
                 //float rotation = player.age * 2 + tickDelta;
+                light = 15728880;
                 renderItem(heldItem, ITEM_POS.add(0, bob, 0), 0, matrices, vertexConsumers, light, overlay, world);
             }
         }
@@ -44,11 +45,7 @@ public class DragonEggIncubatorColdRenderer implements BlockEntityRenderer<Drago
         matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(yRot));
         matrices.scale(1.3f, 1.3f, 1.3f);
 
-        if (itemStack.getItem() instanceof SwordItem || itemStack.getItem() instanceof ToolItem) {
-            matrices.translate(0, 0.1f, 0);
-            matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(-45));
-        }
-
+        light = 15728880;
         itemRenderer.renderItem(itemStack, ModelTransformationMode.FIXED, light, overlay, matrices, vertexConsumers, world, (int) world.getTime());
         matrices.pop();
     }
