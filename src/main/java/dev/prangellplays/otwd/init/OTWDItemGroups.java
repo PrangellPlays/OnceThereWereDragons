@@ -26,6 +26,7 @@ public class OTWDItemGroups {
                 entries.add(OTWDItems.DRAGON_MANUAL);
                 entries.add(OTWDBlocks.LIMESTONE);
                 entries.add(OTWDItems.IRON_MIX);
+                entries.add(OTWDItems.DRAGON_BOOK);
             }).build());
     public static final ItemGroup OTWD_DRAGON_EGGS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(OTWD.MOD_ID, "otwd_dragon_eggs"),

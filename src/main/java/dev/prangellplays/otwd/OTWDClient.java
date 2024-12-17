@@ -2,6 +2,7 @@ package dev.prangellplays.otwd;
 
 import dev.prangellplays.otwd.block.incubator.DragonEggIncubatorColdRenderer;
 import dev.prangellplays.otwd.block.incubator.DragonEggIncubatorHotRenderer;
+import dev.prangellplays.otwd.client.renderer.InvisibleEntityRenderer;
 import dev.prangellplays.otwd.client.screen.OTWDScreenHandlers;
 import dev.prangellplays.otwd.client.screen.incubator.DragonEggIncubatorColdScreen;
 import dev.prangellplays.otwd.client.screen.incubator.DragonEggIncubatorHotScreen;
@@ -9,9 +10,11 @@ import dev.prangellplays.otwd.client.screen.pouch.DragonCrystalPouchScreen;
 import dev.prangellplays.otwd.client.screen.pouch.PouchScreen;
 import dev.prangellplays.otwd.init.OTWDBlockEntities;
 import dev.prangellplays.otwd.init.OTWDBlocks;
+import dev.prangellplays.otwd.init.OTWDEntities;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.render.RenderLayer;
@@ -47,6 +50,9 @@ public class OTWDClient implements ClientModInitializer {
         HandledScreens.register(OTWDScreenHandlers.DRAGON_EGG_INCUBATOR_COLD, DragonEggIncubatorColdScreen::new);
         HandledScreens.register(OTWDScreenHandlers.POUCH, PouchScreen::new);
         HandledScreens.register(OTWDScreenHandlers.DRAGON_CRYSTAL_POUCH, DragonCrystalPouchScreen::new);
+
+        //Entity
+        EntityRendererRegistry.register(OTWDEntities.PHANTOM_STALKER, InvisibleEntityRenderer::new);
 
         //Keybinding
         hover = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.otwd.hover", InputUtil.Type.KEYSYM, 72, "category.otwd"));

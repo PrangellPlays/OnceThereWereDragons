@@ -1,11 +1,13 @@
 package dev.prangellplays.otwd;
 
 import dev.prangellplays.otwd.client.screen.OTWDScreenHandlers;
+import dev.prangellplays.otwd.command.OTWDCommand;
 import dev.prangellplays.otwd.event.DragonCrystalEventHandler;
 import dev.prangellplays.otwd.init.*;
 import dev.prangellplays.otwd.util.OTWDTags;
 import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
@@ -34,9 +36,14 @@ public class OTWD implements ModInitializer {
 		OTWDBlockEntities.init();
 		OTWDRecipes.init();
 		OTWDTags.init();
+		OTWDEntities.init();
 
 		DragonCrystalEventHandler.init();
 		whitelist();
+
+		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
+			OTWDCommand.register(dispatcher);
+		});
 	}
 
 	public static Identifier id(String path) {
@@ -71,5 +78,7 @@ public class OTWD implements ModInitializer {
 	private void whitelist() {
 		crystalWhitelist.add("minecraft:wolf");
 		crystalWhitelist.add("minecraft:donkey");
+
+		crystalWhitelist.add("otwd:phantom_stalker");
 	}
 }

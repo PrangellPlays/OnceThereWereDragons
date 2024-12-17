@@ -40,3 +40,4 @@ replay_*.log
 *.jfr
 /src/main/resources/assets/otwd/textures/item/pouch/pouch.aseprite
 /src/main/resources/assets/otwd/textures/item/pouch/dragon_crystal_pouch.aseprite
+/src/main/resources/assets/otwd/geo/dragon/httyd/nightfury/night_fury.geo.json

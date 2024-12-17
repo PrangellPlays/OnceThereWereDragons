@@ -8,6 +8,7 @@
   "item.otwd.pouch": "Pouch",
   "item.otwd.dragon_crystal_pouch": "Dragon Crystal Pouch",
   "item.otwd.dragon_manual": "The Book Of Dragons",
+  "item.otwd.dragon_book": "Dragon Book",
 
   "item.otwd.iron_mix": "Iron Mix",
   "item.otwd.iron_mix.limestone": "3 parts Limestone",
@@ -69,6 +70,8 @@
   "entity.otwd.deadly_nadder": "Deadly Nadder",
   "entity.otwd.nightlight": "Night Light",
   "entity.otwd.lightfury": "Light Fury",
+
+  "entity.otwd.phantom_stalker": "Phantom Stalker",
 
   "__Comment": "Tooltip",
   "block.minecraft.empty": "Empty",

@@ -1,6 +1,7 @@
 package dev.prangellplays.otwd.init;
 
 import dev.prangellplays.otwd.OTWD;
+import dev.prangellplays.otwd.item.DragonBookItem;
 import dev.prangellplays.otwd.item.DragonCrystalItem;
 import dev.prangellplays.otwd.item.DragonManualItem;
 import dev.prangellplays.otwd.item.IronMixItem;
@@ -26,6 +27,7 @@ public class OTWDItems {
     public static final Item DRAGON_CRYSTAL;
     public static final Item DRAGON_MANUAL;
     public static final Item IRON_MIX;
+    public static final Item DRAGON_BOOK;
 
     //Gronckle Iron
     public static final Item GRONCKLE_IRON_INGOT;
@@ -61,6 +63,7 @@ public class OTWDItems {
         DRAGON_CRYSTAL = register((String) "dragon_crystal", (Item) (new DragonCrystalItem(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.COMMON))));
         DRAGON_MANUAL = register((String) "dragon_manual", (Item) (new DragonManualItem(new FabricItemSettings().maxCount(1).rarity(Rarity.COMMON))));
         IRON_MIX = register((String) "iron_mix", (Item) (new IronMixItem(new FabricItemSettings().rarity(Rarity.COMMON))));
+        DRAGON_BOOK = register((String) "dragon_book", (Item) (new DragonBookItem(new FabricItemSettings().rarity(Rarity.COMMON))));
 
         //Gronckle Iron
         GRONCKLE_IRON_INGOT = register((String) "gronckle_iron_ingot", (Item) (new Item(new FabricItemSettings().fireproof().rarity(Rarity.COMMON))));
